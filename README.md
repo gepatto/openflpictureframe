@@ -2,18 +2,15 @@
 
 ## Work in Progress !!
 
-OpenFL-dev (last tested on commit 78f57ba99c3855fd1b1051d20f5eeb1aff4648b3)
-Lime 6.4.0
-
-This is a Test of using OpenFL on the Raspberry Pi 3.
+This is a Test of using OpenFL on the Raspberry Pi 3, but probably works on mac/linux as well.  
 It's a slideshow that uses a simple shader for transitioning between images.
 
-The app can be configured in the config.json file that's located in the App Directory.
+The app can be configured in the config.json file that's located in the App Directory.  
 These settings can be overwritten by setting them as parameters when starting the Application
 
-i.e:
-`openfl run rpi -args path=/home/pi/Pictures contentFill=fill`
-or from the bin directory
+i.e:  
+`openfl run rpi -args path=/home/pi/Pictures contentFill=fill`  
+or from the bin directory  
 `./Pictureframe -args path=/home/pi/Pictures contentFill=fill transitionTime=100`
 
 available parameters are:
@@ -32,3 +29,12 @@ Keyboard Commands:
 - S -> toggle Show FileName
 - SPACE -> restart at first image
 - W -> toggle FPS debug
+
+---
+
+### Requirements:
+
+OpenFL-dev (last tested on commit 78f57ba99c3855fd1b1051d20f5eeb1aff4648b3)  
+Lime 6.4.0
+
+---
