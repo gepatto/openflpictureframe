@@ -50,7 +50,7 @@ class Settings{
                 var argArray:Array<String> = arg.split("=");
                 if(argArray.length > 1){
                     if( Type.getInstanceFields(Settings).indexOf(argArray[0])!=-1){
-                        Reflect.setField(this,argArray[0],argArray[1].toLowerCase());
+                        Reflect.setField(this,argArray[0],argArray[1]);
                     }else{
                         trace( 'no ${argArray[0]} field in settings');
                     }

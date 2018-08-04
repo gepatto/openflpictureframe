@@ -174,6 +174,9 @@ class Main extends Sprite {
 			case ContentFill.SCALE:
 				wratio = w / source.width;
 				hratio = h / source.height;
+			default:
+				wratio = hratio = Math.min( w / source.width,  h / source.height);
+				trace('Invalid contentFill mode ${settings.contentFill}. Defaulting to fit (lowercase!)');
 		}
 		var matrix:Matrix = new Matrix();
 		matrix.scale(wratio, hratio);

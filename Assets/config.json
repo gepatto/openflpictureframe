@@ -1,5 +1,5 @@
 {
-  "path": "/home/pi/Pictures/",
+  "path": "./images/",
   "displayTime": 5000,
   "transitionTime": 1000,
   "contentFill": "fit",
