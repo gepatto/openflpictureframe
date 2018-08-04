@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Pictureframe" package="nl.gepatto.pictureframe" version="1.0.0" company="Gepatto" />
+	<app main="Main" path="Export" file="Pictureframe" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<assets path="Assets/config.json" rename="config.json"/>
+	<assets path="Assets/fonts"  rename="fonts" include="*.ttf" />
+	<assets path="Assets/images" rename="images"/>
+	
+	<window background="#000000" width="1920" height="1080" fps="59" resizable="true"/>
+	
+</project>

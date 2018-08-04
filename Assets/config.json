@@ -1,0 +1,8 @@
+{
+  "path": "/home/pi/Pictures/",
+  "displayTime": 5000,
+  "transitionTime": 1000,
+  "contentFill": "fit",
+  "showFPS": false,
+  "showFileName": false
+}
