@@ -73,8 +73,10 @@ class Main extends Sprite {
 		//initialize Reusable BitmapDataBuffers
 		initBuffers();
 
-		//
-		bitmap 		= new Bitmap ( blackScreen );
+		fshader = new FadeShader ();
+		bitmap = new Bitmap ( blackScreen );
+		fshader.pct.value = [tweenValue];
+		bitmap.shader = fshader;
 		addChild(bitmap);
 
 		settings = Settings.init();
@@ -188,11 +190,9 @@ class Main extends Sprite {
 
 	function startTransition(back:BitmapData, front:BitmapData){
 		tweenValue = 0.0;
-		fshader = new FadeShader ();
 		fshader.img1.input = back;
 		fshader.img2.input = front;
 		fshader.pct.value = [tweenValue];
-		bitmap.shader = fshader;
 		startTween();
 		feedbackField.text = "";
 	}	
